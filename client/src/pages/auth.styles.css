@@ -1,0 +1,190 @@
+.--auth {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: row;
+   position: fixed;
+ 
+}
+/* Styling the left-container of login form */
+.--left-container {
+    flex: .5;
+    background-color: var(--main-blue-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     color: var(--white);
+     padding-left: 3em;
+    
+}
+
+.--app-name {
+    font-size:65px;
+    font-weight:700;
+    text-justify: inter-word;
+   
+}
+.--highligher{
+    color: var(--secondary-blue);
+}
+.--app-description {
+    font-size: 15px;
+    width: 100%;
+}
+
+/* Styling the rightmost container of the my app */
+
+.--right-container {
+    flex: 0.5;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+   justify-content: center;
+height: 100vh;   
+}
+.--right-container-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+.--app-logo{
+    flex: .1;
+font-size:x-large;
+font-weight: 600;
+font-style: italic;
+text-align: center;
+color: var(--main-blue-light);
+}
+.--welcome {
+    flex: .1;
+}
+.--welcome-text {
+    font-weight: 600;
+}
+.--error-message{
+    color: red;
+    
+}
+.--details{
+    font-size: small;
+    color: var(--text-gray);
+}
+
+.--auth-form {
+   flex: .8;
+   
+}
+.--form-content{
+    justify-content: space-between;
+}
+.--form-fields{
+}
+.--field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    height: 7vh;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+
+.--form-label::after {
+  content: " *";
+  color: var(--main-blue); 
+
+}
+.--form-input {
+    height: 4em;
+    width: 30vw;
+    padding-left: 2em;
+    border: none;
+    background-color: var(--main-gray);
+    border-radius: 5px;
+}
+.--input-error {
+    outline: 1px solid red;
+}
+.--error{
+    color: red;
+    font-size: .6em;
+}
+.--form-input::placeholder {
+    color: var(--text-gray);
+}
+.--form-input:focus {
+    outline: 1px solid var(--main-blue-light);
+    opacity: 100%;
+}
+.--remember{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.--forgot, .--option {
+    color: var(--main-blue)
+}
+
+form .--actions {
+
+   display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-items: center !important; 
+
+}
+.--toggle{
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    color: var(--main-blue-light);
+}
+
+.--main-button {
+    width: 15em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    background-color: var(--main-blue);
+    border-radius: 15px;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.--main-button:hover {
+    background-color: var(--main-blue-light);
+    cursor: pointer;
+}
+.--main-button::-ms-value{
+    font-size: 20px;
+}
+/* Responsive form */
+
+@media (max-width: 768px) {
+  .--left-container {
+    display: none;
+   
+  }
+  .--right-container{
+    flex: 1;
+     
+  }
+  .--form-input {
+ width: 90%;
+
+   
+}
+}
+
+
